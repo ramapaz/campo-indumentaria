@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Julius+Sans+One&family=Permanent+Marker&family=Poppins:wght@300;600;900&family=Ranchers&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --yellow: #f7de82;
+    --blue: #0c4ea2;
+    --bold: 900;
+    --medium: 700;
+    --regular: 400;
+    --thin: 300;
+
+}
+
+body{
+    width: 100vw;
+    font-family: "poppins", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+* img{
+  width: 100%;
+  height: auto;
+}
+header{
+    background-color: var(--yellow);
+    padding: 3rem 3rem 3rem 1rem;
+
+}
+
+/* menu  */
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+    /* wrap mete las cosas abajo por si no entra */
+}
+
+.menu i {
+    font-size: 2rem;
+    color: var(--blue);
+}
+
+.container-items{
+    width: 100%;
+    order: 1;
+}
+.item{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    display: none;
+}
+
+.item:hover{
+    background: beige;
+    padding: 1rem;
+    border-radius: 500px;
+}
+
+.logo{
+    padding: 1rem 3rem 3rem 7rem;
+    text-transform: uppercase;
+    color: black;
+    font-family: "ranchers"; 
+    font-size: 30px;
+}
+
+/* termino el menu  */
+
+/* section 1 about */
+
+.inicio-section{
+    background: #171717;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-content{
+    text-align:center;
+}
+
+.about-content p {
+    /* width: 100%; */
+    font-size: 1.5rem;
+    color: aliceblue;
+    font-weight: var(--medium);
+    margin: 3rem 2rem 3rem 3rem;
+    
+}
+
+.about-imagen{
+    text-align: center;
+}
+.about-imagen p{
+    font-size: 1.5rem;
+    font-weight: var(--medium);
+    /* margin: 3rem 2rem 4rem 0; 
+    */
+    margin: 3rem 3rem 4rem 4rem;
+    color: aliceblue;
+}
+
+.about-description{
+    background: var(--yellow);
+    padding: 2rem 3rem 5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-info{
+    text-align: center;
+}
+.about-info h1{
+    font-size: 2.8rem;
+    font-family: var(--thin);
+    margin: 1rem 2rem 3rem 4rem;
+}
+
+.about-info p {
+    font-size: 1.5rem;
+    font-weight: var(--medium);
+    margin: 1rem 2rem 4rem 6rem;
+    
+}
+.btn-tienda {
+    background:var(--blue);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    margin-left: 3rem;
+}
+
+/*footer*/
+
+.footer{
+    background: #171717;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-final{
+    width: 20rem;
+    font-size: 1.6rem;
+    color: aliceblue;
+    font-weight: var(--medium);
+    margin: 7rem 2rem 3rem 3rem;
+    /* margin-top: 5rem; */
+}
+
+.contacto {
+    
+    color: aliceblue;
+    font-weight: var(--medium);
+    margin: 3rem;
+}
+#institucional{
+    color: #f7de82;
+}
+
+/*mediaqueries desktop*/
+@media (min-width: 1024px) {
+    /*menu*/
+    .menu{
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    .container-items{
+        display: flex;
+        justify-content: flex-end;
+        gap: 50px;
+    }
+    .item{
+        display: flex;
+        
+    }
+    .btn-container{
+        display: none;
+    }
+    .logo{
+        font-size: 35px;
+        padding: 3rem;
+    }
+    
+    .item a{
+        color: #171717;
+    }
+    
+    .item a:visited{
+        color: #171717;
+    }
+    
+    .about-description{
+        padding: 10rem;
+        
+    }
+    
+    .about-content p{
+        padding: 5rem;
+    }
+    .about-imagen p{
+        padding: 5rem;
+    }
+}
