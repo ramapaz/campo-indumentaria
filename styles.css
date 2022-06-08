@@ -29,13 +29,14 @@ li {
 }
 
 * img{
-  width: 100%;
-  height: auto;
+width: 100%;
+height: auto;
 }
 header{
     background-color: var(--yellow);
-    padding: 3rem 3rem 3rem 1rem;
-
+    width: 100%;
+    line-height: 380%;
+    
 }
 
 /* menu  */
@@ -73,11 +74,13 @@ header{
 }
 
 .logo{
-    padding: 1rem 3rem 3rem 7rem;
+    display: flex;
+    justify-content: center;
+    /* padding: 1rem 3rem 3rem 7rem; */
     text-transform: uppercase;
     color: black;
     font-family: "ranchers"; 
-    font-size: 30px;
+    font-size: 24px;
 }
 
 /* termino el menu  */
@@ -95,6 +98,9 @@ header{
 
 .about-content{
     text-align:center;
+    /* line-height: 50px; */
+    width: 100%;
+
 }
 
 .about-content p {
@@ -102,7 +108,195 @@ header{
     font-size: 1.5rem;
     color: aliceblue;
     font-weight: var(--medium);
-    margin: 3rem 2rem 3rem 3rem;
+    width: 100%;
+    padding: 1rem;
+    /* margin: 3rem 2rem 3rem 3rem; */
+    
+}
+
+.about-imagen{
+    text-align: center;
+    /* width: 70px; */
+}
+.about-imagen p{
+    font-size: 1.5rem;
+    font-weight: var(--medium);
+    width: 100%;
+    padding: 1.5rem;
+    /* margin: 3rem 2rem 4rem 0; 
+    */
+    /* margin: 3rem 3rem 4rem 4rem; */
+    color: aliceblue;
+}
+
+.about-description{
+    background: var(--yellow);
+    /* padding: 2rem 3rem 5rem 1rem; */
+    /* width: 100%; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    align-items: center; */
+    padding: 7rem 0;
+    text-align: center;
+}
+/* .about-info{
+    text-align: center;
+    width: 100%;
+ } */
+
+.about-info h1{
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--thin);
+    width: 100%;
+    /* margin: 1rem 2rem 3rem 4rem; */
+}
+
+.about-info p {
+    font-size: 1.5rem;
+    font-weight: var(--medium);
+    /* margin-top: 3rem; */
+    text-align: center;
+    max-width: 100%;
+    margin: 2.8rem auto;
+    /* margin: 1rem 2rem 4rem 6rem; */
+    
+}
+.btn-tienda {
+    background:var(--blue);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    /* margin-top: 2rem; */
+    
+    /* margin-left: 3rem */
+}
+
+/*footer*/
+
+.footer{
+    background: #171717;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-final{
+    margin-top: 5rem;
+    width: 20rem;
+    font-size: 1.6rem;
+    color: aliceblue;
+    font-weight: var(--medium);
+    /* margin: 7rem 2rem 3rem 3rem; */
+    /* margin-top: 5rem; */
+}
+
+.contacto {
+    
+    color: aliceblue;
+    font-weight: var(--medium);
+    margin: 3rem;
+}
+#institucional{
+    color: #f7de82;
+}
+
+/*mediaqueries desktop*/
+@media (min-width: 1024px) {
+
+header{
+    background-color: var(--yellow);
+    width: 100%;
+    /* line-height: 100%; */
+    
+}
+
+/* menu  */
+
+.menu{
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    /* wrap mete las cosas abajo por si no entra */
+}
+
+.menu i {
+    max-width: 95%;
+        gap: 50px;
+}
+.btn-container{
+    display: none;
+}
+.container-items{
+        max-width: 95%;
+        display: flex;
+        justify-content: flex-end;
+        gap: 50px;
+}
+.item{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item:hover{
+    background: beige;
+    padding: 1rem;
+    border-radius: 500px;
+}
+
+.item a{
+    color: #171717;
+}
+
+.logo{
+    /* padding: 1rem 3rem 3rem 7rem; */
+    text-transform: uppercase;
+    color: black;
+    font-family: "ranchers"; 
+    /* font-size: 30px; */
+    font-size: 35px;
+    padding: 3rem;
+}
+
+/* termino el menu  */
+
+/* section 1 about */
+
+.inicio-section{
+    background: #171717;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* .about-description{
+    padding: 10rem;
+    
+} */
+.about-content{
+    text-align:center;
+}
+
+.about-content p {
+    /* width: 100%; */
+    font-size: 1.5rem;
+    color: aliceblue;
+    font-weight: var(--medium);
+    width: 100%;
+    padding: 5rem;
+    /* margin: 3rem 2rem 3rem 3rem; */
     
 }
 
@@ -112,18 +306,21 @@ header{
 .about-imagen p{
     font-size: 1.5rem;
     font-weight: var(--medium);
+    width: 100%;
+    padding: 5rem;
     /* margin: 3rem 2rem 4rem 0; 
     */
-    margin: 3rem 3rem 4rem 4rem;
+    /* margin: 3rem 3rem 4rem 4rem; */
     color: aliceblue;
 }
 
 .about-description{
     background: var(--yellow);
-    padding: 2rem 3rem 5rem 1rem;
+    /* padding: 2rem 3rem 5rem 1rem; */
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 50rem;
     align-items: center;
 }
 .about-info{
@@ -132,21 +329,26 @@ header{
 .about-info h1{
     font-size: 2.8rem;
     font-family: var(--thin);
-    margin: 1rem 2rem 3rem 4rem;
+    width: 100%;
+    /* margin: 1rem 2rem 3rem 4rem; */
 }
 
 .about-info p {
     font-size: 1.5rem;
     font-weight: var(--medium);
-    margin: 1rem 2rem 4rem 6rem;
+    width: 100%;
+    margin-top: 3rem;
+    /* margin: 1rem 2rem 4rem 6rem; */
     
 }
 .btn-tienda {
+    display: flex;
     background:var(--blue);
     color: white;
     padding: 1rem 2rem;
     border-radius: 1rem;
-    margin-left: 3rem;
+    
+    /* margin-left: 3rem */
 }
 
 /*footer*/
@@ -175,51 +377,7 @@ header{
     font-weight: var(--medium);
     margin: 3rem;
 }
-#institucional{
+#institucional {
     color: #f7de82;
 }
-
-/*mediaqueries desktop*/
-@media (min-width: 1024px) {
-    /*menu*/
-    .menu{
-        flex-wrap: nowrap;
-        justify-content: space-around;
-    }
-    .container-items{
-        display: flex;
-        justify-content: flex-end;
-        gap: 50px;
-    }
-    .item{
-        display: flex;
-        
-    }
-    .btn-container{
-        display: none;
-    }
-    .logo{
-        font-size: 35px;
-        padding: 3rem;
-    }
-    
-    .item a{
-        color: #171717;
-    }
-    
-    .item a:visited{
-        color: #171717;
-    }
-    
-    .about-description{
-        padding: 10rem;
-        
-    }
-    
-    .about-content p{
-        padding: 5rem;
-    }
-    .about-imagen p{
-        padding: 5rem;
-    }
 }
